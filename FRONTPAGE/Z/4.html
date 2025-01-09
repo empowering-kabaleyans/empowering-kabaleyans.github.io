@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="blogstyle.css">
+  <title>Uyos na Kaban (UK) Project benefited towns people of Sta. Barbara</title>
+  <style>
+/* General Header Styles */
+.header {
+      width: 100%;
+      background: #39a06f;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    /* Logo Wrapper */
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      background: #f5f13a;
+      width: 20%;
+      border-radius: 5px 50px 50px 5px;
+    }
+
+    .logo-image {
+      padding: 5px 5px;
+      width: 100px;
+      height: 100px;
+      background: url(logo.png) no-repeat center;
+      background-size: cover;
+      border-radius: 6px;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      width: 55%;
+      font-size: 18px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    /* Navigation Menu */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center; /* Centers the navigation horizontally */
+      flex: 1; /* Ensures it takes up equal space within the header */
+    }
+
+    .nav-item {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-item:hover {
+      background: #ffffff;
+      color: #39a06f;
+      border-radius: 4px;
+    }
+
+    /* CTA Wrapper */
+    .cta-wrapper {
+      background: #f5f13a;
+      border-radius: 50px;
+      padding: 15px 25px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .cta-wrapper a.cta-text {
+      color: #39a06f;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none; /* Removes underline */
+      display: inline-block;
+    }
+
+    .cta-wrapper:hover {
+      background: #39a06f;
+    }
+
+    .cta-wrapper:hover a.cta-text {
+      color: #ffffff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+      }
+
+      .logo-text {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .cta-wrapper {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    .background {
+  background-image: url('images/background.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  height: 100%; /* Ensures it takes the full height of the viewport */
+  width: 100%; /* Ensures it takes the full width */
+  margin-top: -34px;
+  
+}
+
+.main-title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Cooper Black', serif;
+  padding-top: 2%;
+}
+
+.title-part1 {
+  color: #108a2f; /* Green */
+}
+
+.title-part2 {
+  color: #f5f13a; /* Yellow */
+}
+
+  
+    /* Section with Logo and Paragraph */
+    .content-section {
+      display: flex;
+      align-items: flex-start; /* Aligns items at the top */
+      justify-content: flex-start; /* Aligns items horizontally */
+      padding: 2rem;
+      width: 80%;  /* Limits the container width */
+      margin: 0 auto;  /* Centers the container */
+      flex-wrap: wrap; /* Makes the layout responsive */
+    }
+
+    .content-image {
+      width: 500px; /* Set to 30% of the container width */
+      height: 300px; /* Automatically adjusts height based on width */
+      background: url('images/2.png') no-repeat center;
+      background-size: cover;
+      border-radius: 10px;
+      margin-top: 2%;
+    }
+
+    .content-text {
+      flex: 1;
+      margin-left: 1rem;
+      color: #333;
+      line-height: 1.2;
+    }
+
+    .content-title {
+      font-size: 35px;
+      font-weight: bold;
+      font-family: 'Cooper Black', serif;
+      color: #02a402;
+      margin-bottom: 0.5rem;
+    }
+
+    .content-text p {
+      font-size: 20px;
+      font-style: italic;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      text-align: justify;
+    }
+
+    .content-text2 p {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 1%;
+      font-family: 'Inter', sans-serif;
+      text-align: justify;
+    }
+
+    .back {
+      font-size: 18x;
+      font-style: italic;
+      font-family: 'Inter', sans-serif;
+      text-align: right;
+      text-decoration: none;
+    } 
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <!-- Logo Section -->
+    <div class="logo-wrapper">
+      <div class="logo-image" role="img" aria-label="Logo image"></div>
+      <p class="logo-text">Santa Barbara Pangasinan Association of America, Inc.</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="../index.html" class="nav-item">Home</a>
+      <a href="../about/About_Us.html" class="nav-item">About Us</a>
+      <a href="../Z/1.html" class="nav-item">Blogs</a>
+      <a href="../sprogram/index.html" class="nav-item">Scholarship Program</a>
+    </nav>
+
+    <!-- CTA Section -->
+    <div class="cta-wrapper">
+      <a href="../support/support.html" class="cta-text">SUPPORT OUR PROGRAMS!</a>
+    </div>
+  </header>
+  
+  <div class="background">
+    <!-- Section with Logo and Paragraph -->
+    
+<h1 class="main-title">
+  <span class="title-part1">Ang aming mga kwentong</span> 
+  <span class="title-part2">#TATAKSBPAAI</span>
+</h1>
+
+
+    <section class="content-section">
+      <div class="content-image"></div>
+      <div class="content-text">
+        <h2 class="content-title">Uyos na Kaban (UK) Project benefited towns people of Sta. Barbara</h2>
+        <p>by Ashley Nicole Cruz 
+          Uy<br><br>The Uyos na Kaban (UK) Project supported the townspeople of Santa Barbara by distributing surplus clothes to those in need, promoting generosity and community care.          <br><br></p>
+        
+      </div>
+      <div class="content-text2">
+        <p>The Santa Barbara Pangasinan Association of America, Inc. (SBPAAI) is proud to shine a spotlight on the incredible work being done by Mdm. Ramelita Patani-DeGuzman Tarlit, the coordinator of the association’s Uyos ed Kaban (UK) Project. Amidst the challenging rains that have recently hit the town, Mdm. Ramie has gone above and beyond to ensure that the goods collected for the project are distributed to those in need. Whether it’s asking recipients to come to her residence in Maticmatic, meeting a group of beneficiaries in her Maningding classroom before or after classes, or even stepping into alleys to hand out items to those she encounters, Mdm. Ramie is dedicated to making sure no one is left behind. Her resourcefulness and commitment to service truly embody the spirit of the UK Project.<br><br>
+          The UK Project is part of SBPAAI’s larger civic program, which aims to share resources with the community, especially to those who need it the most. Recently, the distribution of three balikbayan boxes of hand-me-down items—ranging from clothes to a few adult items—was completed. While there are still some remaining items to be given out, the project has already made a significant impact on the lives of many grateful recipients. The project has been so successful that the association plans to continue this initiative throughout the holiday season and, hopefully, make it a year-round endeavor.<br><br>
+          What started as a simple idea to share gently used items among community members has now evolved into an important pillar of SBPAAI’s civic program. The UK Project adds another layer of support to the association's three general programs—educational scholarships, medical aid, and civic initiatives. It’s a testament to the association's long-standing tradition of giving and helping others. With the continued generosity of its members and supporters from both the US and the Philippines, SBPAAI hopes to expand the reach of the UK Project and provide even more assistance to the indigent townspeople of Santa Barbara, Pangasinan.<br><br>
+          Coordinated under the guidance of board member and past president Teresita Casiano, the UK Project is an ongoing, all-year activity that complements SBPAAI’s other vital programs, including the book drive and the food package distribution initiatives. The UK Project is not just about material items; it’s a symbol of solidarity, compassion, and community. As the association looks to the future, it hopes to inspire even more contributions from its members, their families, and friends, ensuring that the project will continue to thrive and benefit a significant number of needy kababayans for years to come.
+        </p>
+
+        <div class="back">
+        <a href="1.html">Back</a>
+      </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="solid-green-footer">
+    <link rel="stylesheet" href="styles.css">
+        <div class="footer-content">
+          <div class="footer-logo-text">
+            <img src="logo.png" alt="Organization Logo" class="footer-logo">
+            <div class="footer-text">
+              <p class="footer-description">
+                A California nonprofit public benefit corporation to engage in activities to foster fellowship among its members, 
+                to promote their common cultural interests, and to render assistance to the inhabitants of Santa Barbara, Pangasinan, Philippines.
+              </p>
+              <p class="footer-contact">
+                Contact Us @ <a href="mailto:empoweringkabaleyans@icloud.com">empoweringkabaleyans@icloud.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Credits Section -->
+        <div class="footer-credits">
+          <p>
+            © 2024 Empowering Kabaleyans All Rights Reserved | Designed by <span class="designer">SPIDEY WEB</span>
+          </p>
+        </div>
+      </footer>
+      
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="stylesindex.css">
+  <title>About Us</title>
+  <style>
+    /* General Header Styles */
+    .header {
+      width: 100%;
+      background: #39a06f;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    /* Logo Wrapper */
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      background: #f5f13a;
+      width: 20%;
+      border-radius: 5px 50px 50px 5px;
+    }
+
+    .logo-image {
+      padding: 5px 5px;
+      width: 100px;
+      height: 100px;
+      background: url(logo.png) no-repeat center;
+      background-size: cover;
+      border-radius: 6px;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      width: 55%;
+      font-size: 18px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    /* Navigation Menu */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center; /* Centers the navigation horizontally */
+      flex: 1; /* Ensures it takes up equal space within the header */
+    }
+
+    .nav-item {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-item:hover {
+      background: #ffffff;
+      color: #39a06f;
+      border-radius: 4px;
+    }
+
+    /* CTA Wrapper */
+    .cta-wrapper {
+      background: #f5f13a;
+      border-radius: 50px;
+      padding: 15px 25px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .cta-wrapper a.cta-text {
+      color: #39a06f;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none; /* Removes underline */
+      display: inline-block;
+    }
+
+    .cta-wrapper:hover {
+      background: #39a06f;
+    }
+
+    .cta-wrapper:hover a.cta-text {
+      color: #ffffff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+      }
+
+      .logo-text {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .cta-wrapper {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+
+    /* Background Section */
+    .background {
+      position: relative;
+      background: url('1.png') no-repeat center center / cover;
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .transbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(2, 164, 2, 0.7);
+      z-index: 5;
+      opacity: 0.3;
+    }
+
+    .transbox1 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 7;
+    }
+
+    .transbox1 p {
+      font-size: 50px;
+      font-style: italic;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #000000;
+      background-color: rgba(174, 234, 161, 0.5);
+      border-radius: 50px;
+      padding: 15px 35px;
+    }
+
+    /* Main Content Section */
+    .content-ce {
+      flex: 1 1 45%;
+      padding-top: 10%;
+      display: flex;
+      flex-direction: column; /* Stack the content vertically inside each section */
+      align-items: flex-start;
+      gap: 1rem;
+      z-index: 9;
+    }
+
+    .content-2 {
+      display: flex;
+      flex-direction: row; /* Keep the image and heading side by side */
+      align-items: flex-start; /* Align items at the top */
+      justify-content: flex-start; /* Align items horizontally */
+      padding: 3rem;
+    }
+
+    .content-ce img {
+      width: 5px; /* Adjust image size */
+      height: 200px; /* Maintain aspect ratio */
+      border-radius: 10px;
+      margin-right: 20px; /* Space between the image and the heading */
+      margin-top: 4%;
+    }
+
+    .content-ce h2 {
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    .content-ce p {
+      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      font-style: italic;
+      line-height: 1.6;
+      color: white;
+      text-align: justify;
+      width: 90%;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      /* Adjust the background height for smaller screens */
+      .background {
+        height: 40vh;
+      }
+
+      .transbox1 p {
+        font-size: 30px; /* Make text smaller on mobile */
+        padding: 10px 20px;
+      }
+
+      /* Stack content vertically for mobile */
+      .content-2 {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        padding: 1rem;
+      }
+
+      /* Adjust image and text sizes for mobile */
+      .content-ce img {
+        width: 100%; /* Make image full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 0; /* Remove margin between image and text */
+      }
+
+      .content-ce h2 {
+        font-size: 30px; /* Make title smaller on mobile */
+      }
+
+      .content-ce p {
+        font-size: 18px; /* Make paragraph text smaller on mobile */
+        width: 100%; /* Allow text to take up full width */
+      }
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      /* Adjust the background height for smaller screens */
+      .background {
+        height: 40vh;
+      }
+
+      .transbox1 p {
+        font-size: 30px; /* Make text smaller on mobile */
+        padding: 10px 20px;
+      }
+
+      /* Stack content vertically for mobile */
+      .content-2 {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        padding: 1rem;
+      }
+
+      /* Adjust image and text sizes for mobile */
+      .content-ce img {
+        width: 100%; /* Make image full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 0; /* Remove margin between image and text */
+      }
+
+      .content-ce h2 {
+        font-size: 30px; /* Make title smaller on mobile */
+      }
+
+      .content-ce p {
+        font-size: 18px; /* Make paragraph text smaller on mobile */
+        width: 100%; /* Allow text to take up full width */
+      }
+    }
+
+    /* Media Query for very small devices (phones in portrait) */
+    @media (max-width: 480px) {
+      .transbox1 p {
+        font-size: 24px; /* Further reduce font size for small screens */
+        padding: 8px 15px;
+      }
+
+      .content-ce h2 {
+        font-size: 25px; /* Make title smaller on very small devices */
+      }
+
+      .content-ce p {
+        font-size: 16px; /* Adjust paragraph text for small devices */
+      }
+    }
+    
+    /* Section with Logo and Paragraph  */
+    .content-section {
+      display: flex;
+      align-items: flex-start; /* Aligns items at the top */
+      justify-content: flex-start; /* Aligns items horizontally */
+      padding: 2rem;
+      width: 60%;  /* Limits the container width */
+      margin: 0 auto;  /* Centers the container */
+      background: #ffffff;
+    }
+
+    .content-logo {
+      width: 300px;
+      height: 300px;
+      background: url('logo.png') no-repeat center;
+      background-size: cover;
+      border-radius: 10px;
+    }
+
+    .content-text {
+      flex: 1;
+      margin-left: 1rem;
+      color: #333;
+      line-height: 1.2;
+    }
+
+    .content-title {
+      font-size: 60px;
+      font-weight: bold;
+      font-family: 'Cooper Black', serif;
+      color: #02a402;
+      margin-bottom: 0.5rem;
+    }
+
+    .content-text p {
+      font-size: 24px;
+      font-style: italic;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      text-align: justify;
+    }
+
+    /* Media Query for mobile devices */
+    @media (max-width: 768px) {
+      .content-section {
+        flex-direction: column; /* Stacks the logo and text vertically */
+        padding: 1.5rem;
+      }
+
+      .content-logo {
+        width: 80%; /* Makes logo smaller on mobile */
+        max-width: 250px;
+        height: 250px;
+      }
+
+      .content-text {
+        margin-left: 0;
+        text-align: center; /* Centers text for smaller screens */
+      }
+
+      .content-title {
+        font-size: 2rem; /* Adjusts the title size for mobile */
+      }
+
+      .content-text p {
+        font-size: 1rem; /* Adjusts the text size for mobile */
+      }
+    }
+
+
+    /* Slider Styling */
+    .slider-wrapper {
+      position: relative;
+      width: 90%;
+      height: 75vh;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .slider {
+      display: flex;
+      aspect-ratio: 16 / 9;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider img {
+      flex: 1 0 100%;
+      width: 100%;
+    }
+
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 1rem;
+    }
+
+    .slider-button.prev {
+      left: 1rem;
+    }
+
+    .slider-button.next {
+      right: 1rem;
+    }
+
+    .context p {
+      font-size: 24px;
+      font-style: italic;
+      margin: 0;
+      font-family: sans-serif;
+      text-align: justify;
+      padding: 40px 5%;
+    }
+
+    /* Media Query for smaller screens (Mobile devices) */
+    @media (max-width: 600px) {
+      .context p {
+        font-size: 18px;
+        padding: 20px 5%;
+      }
+    }
+
+    /* Media Query for larger screens (PC, Tablets) */
+    @media (min-width: 601px) {
+      .context p {
+        font-size: 24px;
+        padding: 40px 10%;
+      }
+    }
+
+    /* Solid Green Footer */
+    .solid-green-footer {
+      background: #39a06f; /* Solid green background */
+      color: #ffffff; /* White text color */
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+  
+    /* Footer Content Layout */
+    .footer-content {
+      display: flex;
+      justify-content: center; /* Center the entire footer content */
+      align-items: center;
+      margin-bottom: 20px; /* Space between content and credits */
+    }
+  
+    /* Logo and Text Container */
+    .footer-logo-text {
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Space between logo and text */
+      max-width: 800px; /* Limit the total width */
+    }
+  
+    /* Logo Styling */
+    .footer-logo {
+      width: 100px; /* Adjust size as needed */
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px; /* Optional rounded corners */
+    }
+  
+    /* Text Styling */
+    .footer-text {
+      flex: 1; /* Allow the text to take up remaining space */
+      text-align: justify; /* Justify the text */
+    }
+  
+    .footer-description {
+      font-family: 'Verdana', sans-serif; /* Common, readable footer font */
+      font-size: 14px;
+      line-height: 1.6; /* Improve readability */
+      margin: 0 0 10px 0; /* Add spacing below the description */
+    }
+  
+    .footer-contact {
+      font-family: 'Verdana', sans-serif; /* Match font */
+      font-size: 14px;
+      margin: 0;
+      text-align: left; /* Keep email aligned to the left */
+    }
+  
+    .footer-contact a {
+      color: #ffffff;
+      text-decoration: underline;
+      font-weight: normal; /* Remove bold */
+      transition: color 0.3s;
+    }
+  
+    .footer-contact a:hover {
+      color: #f5f13a; /* Yellow hover effect */
+    }
+  
+    /* Credits Section */
+    .footer-credits {
+      text-align: center;
+      font-family: 'Verdana', sans-serif; /* Match footer font */
+      font-size: 12px;
+      color: #e1e1e1; /* Light grey for less emphasis */
+    }
+  
+    .footer-credits .designer {
+      font-weight: bold;
+      color: #f5f13a; /* Yellow for emphasis */
+      transition: color 0.3s;
+    }
+  
+    .footer-credits .designer:hover {
+      color: #ffffff; /* White on hover */
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .footer-logo-text {
+      flex-direction: column; /* Stack logo and text vertically */
+      text-align: center; /* Center all text and logo on small screens */
+    }
+  
+    .footer-logo {
+      margin-bottom: 15px; /* Add spacing below logo */
+    }
+  
+    .footer-text {
+      text-align: justify;
+    }
+  
+    .footer-credits {
+      font-size: 10px; /* Slightly smaller for small screens */
+    }
+  }
+
+  </style>
+
+</head>
+<body>
+  <header class="header">
+    <!-- Logo Section -->
+    <div class="logo-wrapper">
+      <div class="logo-image" role="img" aria-label="Logo image"></div>
+      <p class="logo-text">Santa Barbara Pangasinan Association of America, Inc.</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="../index.html" class="nav-item">Home</a>
+      <a href="../about/About_Us.html" class="nav-item">About Us</a>
+      <a href="../Z/1.html" class="nav-item">Blogs</a>
+      <a href="../sprogram/index.html" class="nav-item">Scholarship Program</a>
+    </nav>
+
+    <!-- CTA Section -->
+    <div class="cta-wrapper">
+      <a href="../support/support.html" class="cta-text">SUPPORT OUR PROGRAMS!</a>
+    </div>
+  </header>
+
+  <div class="background">
+    <div class="transbox"></div>
+    <div class="transbox1">
+      <p>ADVOCACY PILLARS.</p>
+    </div>
+
+    <!-- College Education Section -->
+    <div class="content-ce">
+      <section class="content-2">
+        <div class="content-1">
+          <h2>College Education</h2>
+          <p>
+            Dedicated to empowering deserving students from Santa Barbara, Pangasinan, by providing financial assistance to help them achieve their educational dreams.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Community Engagement Section -->
+    <div class="content-ce">
+      <section class="content-2">
+        <div class="content-1">
+          <h2>Community Engagement</h2>
+          <p>
+            SBPAAI brings together stakeholders and volunteers through projects like Pamalabas Ya Gawat and Uyos na Kaban, which provide relief and support to poor but deserving individuals in Santa Barbara. These initiatives highlight our commitment to active social involvement and community empowerment.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Section with Logo and Paragraph -->
+  <section class="content-section">
+    <div class="content-logo"></div>
+    <div class="content-text">
+      <h2 class="content-title">About Us</h2>
+      <p>
+        A California nonprofit public benefit corporation to engage in activities to foster fellowship among its members, to promote their common cultural interests, and to render assistance to the inhabitants of Santa Barbara, Pangasinan, Philippines.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Slider Image -->
+  <section class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-1" src="groupphoto1.jpg" alt="Slide 1">
+        <img id="slide-2" src="groupphoto2.jpg" alt="Slide 2">
+        <img id="slide-3" src="groupphoto3.jpg" alt="Slide 3">
+      </div>
+      <button class="slider-button prev">❮</button>
+      <button class="slider-button next">❯</button>
+    </div>
+  </section>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider img');
+    const prevButton = document.querySelector('.slider-button.prev');
+    const nextButton = document.querySelector('.slider-button.next');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    const updateSlidePosition = () => {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    const moveToNextSlide = () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlidePosition();
+    };
+
+    const moveToPrevSlide = () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlidePosition();
+    };
+
+    let autoSlide = setInterval(moveToNextSlide, 3000);
+
+    nextButton.addEventListener('click', () => {
+      clearInterval(autoSlide);
+      moveToNextSlide();
+      autoSlide = setInterval(moveToNextSlide, 3000);
+    });
+
+    prevButton.addEventListener('click', () => {
+      clearInterval(autoSlide);
+      moveToPrevSlide();
+      autoSlide = setInterval(moveToNextSlide, 3000);
+    });
+  </script>
+
+  <section class="context">
+    <p>The Santa Barbara Pangasinan Alumni Association, Inc. (SBPAAI) is a testament to the enduring spirit of community, solidarity, and giving back. Established 40 years ago, SBPAAI was born out of a shared commitment to remember our roots and uplift the lives of our fellow Santa Barbara town folks. Over the decades, our association has become a beacon of hope and a platform for camaraderie, channeling the collective efforts of members, stakeholders, and friends to create meaningful change.</br></br>
+
+    Our journey has been marked by challenges and triumphs, guided by the values of teamwork, hard work, and dedication. Through dynamic leadership and the unwavering support of our members, SBPAAI has grown into an organization that not only fosters social connections but also mobilizes resources to assist the marginalized members of our community.</br></br>
+
+    As we always keep with our quote, "Tree of Dreams, Together We Build," it truly embodies the spirit of collaboration that defines SBPAAI. It highlights our relentless pursuit of mobilizing kindness and generosity to empower the youth and others to realize their dreams for a brighter future.</br></br>
+
+    As we honor the past, we pay tribute to the tireless efforts of our past presidents and leaders who have shaped our organization, ensuring its viability and success. Their dedication and vision have inspired collective action and a legacy of community building that continues to thrive. SBPAAI is more than an association; it is a family united by shared roots and the dream of a better tomorrow. Together, we remain committed to making a difference, one act of kindness at a time.
+    </p>
+  </section>
+
+  <footer class="solid-green-footer">
+    <link rel="stylesheet" href="styles.css">
+      <div class="footer-content">
+        <div class="footer-logo-text">
+          <img src="logo.png" alt="Organization Logo" class="footer-logo">
+          <div class="footer-text">
+            <p class="footer-description">
+            A California nonprofit public benefit corporation to engage in activities to foster fellowship among its members, 
+            to promote their common cultural interests, and to render assistance to the inhabitants of Santa Barbara, Pangasinan, Philippines.
+            </p>
+            <p class="footer-contact">
+              Contact Us @ <a href="mailto:empoweringkabaleyans@icloud.com">empoweringkabaleyans@icloud.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Credits Section -->
+    <div class="footer-credits">
+      <p>
+        © 2024 Empowering Kabaleyans All Rights Reserved | Designed by <span class="designer">SPIDEY WEB</span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

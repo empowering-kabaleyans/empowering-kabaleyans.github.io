@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="supportcss.css">
+  <title>Support Our Programs</title>
+  <style>
+    /* General Header Styles */
+    .header {
+      width: 100%;
+      background: #39a06f;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    /* Logo Wrapper */
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      background: #f5f13a;
+      width: 20%;
+      border-radius: 5px 50px 50px 5px;
+    }
+
+    .logo-image {
+      padding: 5px 5px;
+      width: 100px;
+      height: 100px;
+      background: url(logo.png) no-repeat center;
+      background-size: cover;
+      border-radius: 6px;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      width: 55%;
+      font-size: 18px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    /* Navigation Menu */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center; /* Centers the navigation horizontally */
+      flex: 1; /* Ensures it takes up equal space within the header */
+    }
+
+    .nav-item {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-item:hover {
+      background: #ffffff;
+      color: #39a06f;
+      border-radius: 4px;
+    }
+
+    /* CTA Wrapper */
+    .cta-wrapper {
+      background: #f5f13a;
+      border-radius: 50px;
+      padding: 15px 25px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .cta-wrapper a.cta-text {
+      color: #39a06f;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none; /* Removes underline */
+      display: inline-block;
+    }
+
+    .cta-wrapper:hover {
+      background: #39a06f;
+    }
+
+    .cta-wrapper:hover a.cta-text {
+      color: #ffffff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+      }
+
+      .logo-text {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .cta-wrapper {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <!-- Logo Section -->
+    <div class="logo-wrapper">
+      <div class="logo-image" role="img" aria-label="Logo image"></div>
+      <p class="logo-text">Santa Barbara Pangasinan Association of America, Inc.</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="../index.html" class="nav-item">Home</a>
+      <a href="../about/About_Us.html" class="nav-item">About Us</a>
+      <a href="../Z/1.html" class="nav-item">Blogs</a>
+      <a href="../sprogram/index.html" class="nav-item">Scholarship Program</a>
+    </nav>
+
+    <!-- CTA Section -->
+    <div class="cta-wrapper">
+      <a href="../support/support.html" class="cta-text">SUPPORT OUR PROGRAMS!</a>
+    </div>
+  </header>
+</body>
+</html>
+
+  <!-- New Header Title Below the Menu -->
+  <div class="header-title">Help us empower our kabaleyans in need!</div>
+
+  <section class="photo-text-section">
+    <div class="photo-container">
+      <img src="gcashqr.png" alt="GCash QR Code" class="photo">
+    </div>
+    <div class="text-container">
+      <h2>HOW TO SUPPORT US USING GCASH QR</h2>
+      <p>
+        <strong>1. Open Your GCash App:</strong> Launch the GCash application on your smartphone. If you haven’t already, make sure to log in to your account.
+      </p>
+      <p>
+        <strong>2. Select ‘Pay QR’:</strong> From the dashboard, tap on the ‘Pay QR’ option. This may also appear as ‘Scan QR Code’ depending on your app version.
+      </p>
+      <p>
+        <strong>3. Scan the QR Code:</strong> Use your phone’s camera to scan the QR code provided for donations. Ensure the QR code is clearly visible for easy scanning.
+      </p>
+      <p>
+        <strong>4. Enter the Amount:</strong> Once the QR code is recognized, you will be prompted to enter the amount you wish to donate.
+      </p>
+      <p>
+        <strong>5. Confirm Your Donation:</strong> Review the details of your transaction to ensure everything is correct. Then, confirm your donation by tapping the ‘Pay’ button.
+      </p>
+      <p>
+        <strong>6. Successful Donation:</strong> You will receive a confirmation message on your screen once the donation is successful. Keep this confirmation for your records.
+      </p>
+    </div>
+  </section>
+
+  <footer class="solid-green-footer">
+    <link rel="stylesheet" href="styles.css">
+        <div class="footer-content">
+          <div class="footer-logo-text">
+            <img src="logo.png" alt="Organization Logo" class="footer-logo">
+            <div class="footer-text">
+              <p class="footer-description">
+                A California nonprofit public benefit corporation to engage in activities to foster fellowship among its members, 
+                to promote their common cultural interests, and to render assistance to the inhabitants of Santa Barbara, Pangasinan, Philippines.
+              </p>
+              <p class="footer-contact">
+                Contact Us @ <a href="mailto:empoweringkabaleyans@icloud.com">empoweringkabaleyans@icloud.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Credits Section -->
+        <div class="footer-credits">
+          <p>
+            © 2024 Empowering Kabaleyans All Rights Reserved | Designed by <span class="designer">SPIDEY WEB</span>
+          </p>
+        </div>
+      </footer>
+      
+
+</body>
+</html>
