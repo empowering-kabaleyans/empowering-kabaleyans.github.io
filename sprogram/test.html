@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesindex.css">
+  <title>Responsive Advocacy Pillars Header</title>
+  <style>
+    /* General Header Styles */
+    .header {
+      width: 100%;
+      background: #39a06f;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    /* Logo Wrapper */
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      background: #f5f13a;
+      width: 20%;
+      border-radius: 5px 50px 50px 5px;
+    }
+
+    .logo-image {
+      padding: 5px 5px;
+      width: 100px;
+      height: 100px;
+      background: url(logo.png) no-repeat center;
+      background-size: cover;
+      border-radius: 6px;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      width: 55%;
+      font-size: 18px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    /* Navigation Menu */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center; /* Centers the navigation horizontally */
+      flex: 1; /* Ensures it takes up equal space within the header */
+    }
+
+    .nav-item {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-item:hover {
+      background: #ffffff;
+      color: #39a06f;
+      border-radius: 4px;
+    }
+
+    /* CTA Wrapper */
+    .cta-wrapper {
+      background: #f5f13a;
+      border-radius: 50px;
+      padding: 15px 25px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .cta-wrapper a.cta-text {
+      color: #39a06f;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none; /* Removes underline */
+      display: inline-block;
+    }
+
+    .cta-wrapper:hover {
+      background: #39a06f;
+    }
+
+    .cta-wrapper:hover a.cta-text {
+      color: #ffffff;
+    }
+
+    /* Step Styles */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .step {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .step-number {
+      font-size: 40px;
+      font-weight: bold;
+      color: #39a06f;
+      margin-right: 20px;
+    }
+
+    .step-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step h2 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Responsive Styles for Steps */
+    @media (max-width: 768px) {
+      .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .step-number {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      .step-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+      }
+
+      .step-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <!-- Logo Section -->
+    <div class="logo-wrapper">
+      <div class="logo-image" role="img" aria-label="Logo image"></div>
+      <p class="logo-text">Santa Barbara Pangasinan Association of America, Inc.</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#about" class="nav-item">About Us</a>
+      <a href="#partners" class="nav-item">Partners</a>
+      <a href="#scholarship" class="nav-item">Scholarship Program</a>
+    </nav>
+
+    <!-- CTA Section -->
+    <div class="cta-wrapper">
+      <a href="#support-programs" class="cta-text">SUPPORT OUR PROGRAMS!</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Step 1 -->
+    <div class="step step-1">
+      <div class="step-number">1</div>
+      <img src="step1.png" alt="Step 1 Image" class="step-image">
+      <div class="step-content">
+        <h2>Step 1: Pre-Application</h2>
+        <p>
+          Applicants fill out a Google Form that contains their names and contact numbers. The contact details will be used to contact them for scheduled interviews and actual Google Forms for application.
+        </p>
+      </div>
+    </div>
+    <!-- Step 2 -->
+    <div class="step step-2">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h2>Step 2: Application</h2>
+        <p>
+          Applicants will be contacted through the contact details that they have provided during the pre-application period. Applicants will receive the Google Form link through the number they provided on the pre-application form and will be directed to answer them only in a specific timeframe.
+        </p>
+      </div>
+      <img src="step2-image.png" alt="Step 2 Image" class="step-image">
+    </div>
+    <!-- Step 3 -->
+    <div class="step step-3">
+      <div class="step-number">3</div>
+      <img src="step3.png" alt="Step 3 Image" class="step-image">
+      <div class="step-content">
+        <h2>Step 3: Interview</h2>
+        <p>
+          After submitting their applications, applicants will undergo an interview process, which will be scheduled based on their availability.
+        </p>
+      </div>
+    </div>
+    <!-- Step 4 -->
+    <div class="step step-4">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h2>Step 4: Selection</h2>
+        <p>
+          Following the interview, the applicants will be evaluated based on the criteria set for the program, and selected candidates will be notified.
+        </p>
+      </div>
+      <img src="step4.png" alt="Step 4 Image" class="step-image">
+    </div>
+    <!-- Step 5 -->
+    <div class="step step-5">
+      <div class="step-number">5</div>
+      <img src="step5.png" alt="Step 5 Image" class="step-image">
+      <div class="step-content">
+        <h2>Step 5: Awarding</h2>
+        <p>
+          The final step involves the awarding ceremony for selected recipients, where they will receive recognition and support for their educational pursuits.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

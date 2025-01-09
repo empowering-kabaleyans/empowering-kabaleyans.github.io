@@ -1,0 +1,243 @@
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #fdfc47, #24fe41); /* Gradient directly embedded here */
+    background-attachment: fixed; /* Makes the gradient fixed while scrolling */
+    background-size: cover; /* Ensures the gradient covers the entire viewport */
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+
+/* Content styling */
+.content {
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fdfc47, #24fe41);
+    color: #000000;
+  }
+  
+/* Container to stack all steps vertically */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack steps vertically */
+    align-items: center; /* Center steps horizontally */
+    gap: 30px; /* Spacing between steps */
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 20px; /* Add some padding on the sides */
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Make sure the image and text are spread out */
+    width: 100%;
+    max-width: 900px; /* Set a max-width for the steps */
+    height: 200px; /* Set a fixed height for each step */
+    padding: 20px;
+  }
+  
+  .step-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #39a06f;
+    margin-right: 20px;
+  }
+  
+  .step-image {
+    width: 325px;
+    height: 225px;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+  
+  .step-content {
+    flex: 1;
+    padding-left: 20px; /* Adds some space between text and image */
+  }
+  
+  .step h2 {
+    font-size: 22px;
+    color: #007f00;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 16px;
+    color: #0b0b0b;
+  }
+  
+  /* Step 1: Image on the left */
+  .step-1 {
+    flex-direction: row;
+  }
+  
+  /* Step 2: Text on the left, Image on the right */
+  .step-2 {
+    flex-direction: row-reverse;
+  }
+  
+  /* Step 3: Image on the left */
+  .step-3 {
+    flex-direction: row;
+  }
+  
+  /* Step 4: Text on the left, Image on the right */
+  .step-4 {
+    flex-direction: row-reverse;
+  }
+  
+  /* Step 5: Image on the left */
+  .step-5 {
+    flex-direction: row;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .step {
+      flex-direction: column; /* Stack the image and text vertically for small screens */
+      height: auto; /* Allow step height to adjust */
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .step-image {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+  
+    .step-number {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+  
+    .step-content {
+      padding-left: 0; /* Remove left padding for small screens */
+    }
+  }
+
+
+
+  /* Solid Green Footer */
+.solid-green-footer {
+    background: #39a06f; /* Solid green background */
+    color: #ffffff; /* White text color */
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Footer Content Layout */
+  .footer-content {
+    display: flex;
+    justify-content: center; /* Center the entire footer content */
+    align-items: center;
+    margin-bottom: 20px; /* Space between content and credits */
+  }
+  
+  /* Logo and Text Container */
+  .footer-logo-text {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and text */
+    max-width: 800px; /* Limit the total width */
+  }
+  
+  /* Logo Styling */
+  .footer-logo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px; /* Optional rounded corners */
+  }
+  
+  /* Text Styling */
+  .footer-text {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: justify; /* Justify the text */
+  }
+  
+  .footer-description {
+    font-family: 'Verdana', sans-serif; /* Common, readable footer font */
+    font-size: 14px;
+    line-height: 1.6; /* Improve readability */
+    margin: 0 0 10px 0; /* Add spacing below the description */
+  }
+  
+  .footer-contact {
+    font-family: 'Verdana', sans-serif; /* Match font */
+    font-size: 14px;
+    margin: 0;
+    text-align: left; /* Keep email aligned to the left */
+  }
+  
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: normal; /* Remove bold */
+    transition: color 0.3s;
+  }
+  
+  .footer-contact a:hover {
+    color: #f5f13a; /* Yellow hover effect */
+  }
+  
+  /* Credits Section */
+  .footer-credits {
+    text-align: center;
+    font-family: 'Verdana', sans-serif; /* Match footer font */
+    font-size: 12px;
+    color: #e1e1e1; /* Light grey for less emphasis */
+  }
+  
+  .footer-credits .designer {
+    font-weight: bold;
+    color: #f5f13a; /* Yellow for emphasis */
+    transition: color 0.3s;
+  }
+  
+  .footer-credits .designer:hover {
+    color: #ffffff; /* White on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-logo-text {
+      flex-direction: column; /* Stack logo and text vertically */
+      text-align: center; /* Center all text and logo on small screens */
+    }
+  
+    .footer-logo {
+      margin-bottom: 15px; /* Add spacing below logo */
+    }
+  
+    .footer-text {
+      text-align: justify;
+    }
+  
+    .footer-credits {
+      font-size: 10px; /* Slightly smaller for small screens */
+    }
+  }
+  

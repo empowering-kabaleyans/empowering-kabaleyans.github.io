@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesindex.css">
+  <title>Scholarship Program</title>
+  <style>
+    /* General Header Styles */
+    .header {
+      width: 100%;
+      background: #39a06f;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    /* Logo Wrapper */
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      background: #f5f13a;
+      width: 20%;
+      border-radius: 5px 50px 50px 5px;
+    }
+
+    .logo-image {
+      padding: 5px 5px;
+      width: 100px;
+      height: 100px;
+      background: url(logo.png) no-repeat center;
+      background-size: cover;
+      border-radius: 6px;
+    }
+
+    .logo-text {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      width: 55%;
+      font-size: 18px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    /* Navigation Menu */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center; /* Centers the navigation horizontally */
+      flex: 1; /* Ensures it takes up equal space within the header */
+    }
+
+    .nav-item {
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-item:hover {
+      background: #ffffff;
+      color: #39a06f;
+      border-radius: 4px;
+    }
+
+    /* CTA Wrapper */
+    .cta-wrapper {
+      background: #f5f13a;
+      border-radius: 50px;
+      padding: 15px 25px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .cta-wrapper a.cta-text {
+      color: #39a06f;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none; /* Removes underline */
+      display: inline-block;
+    }
+
+    .cta-wrapper:hover {
+      background: #39a06f;
+    }
+
+    .cta-wrapper:hover a.cta-text {
+      color: #ffffff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+      }
+
+      .logo-text {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .cta-wrapper {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <!-- Logo Section -->
+    <div class="logo-wrapper">
+      <div class="logo-image" role="img" aria-label="Logo image"></div>
+      <p class="logo-text">Santa Barbara Pangasinan Association of America, Inc.</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="../index.html" class="nav-item">Home</a>
+      <a href="../about/About_Us.html" class="nav-item">About Us</a>
+      <a href="../Z/1.html" class="nav-item">Blogs</a>
+      <a href="../sprogram/index.html" class="nav-item">Scholarship Program</a>
+    </nav>
+
+    <!-- CTA Section -->
+    <div class="cta-wrapper">
+      <a href="../support/support.html" class="cta-text">SUPPORT OUR PROGRAMS!</a>
+    </div>
+  </header>
+
+  <!--CENTERED PHOTO EMPOWERING KABALEYANS-->
+  <section class="centered-photo-section">
+    <img src="main.png" alt="Centered Image" class="centered-photo">
+  </section>
+
+  <div class="container">
+    <!-- Step 1 -->
+    <div class="step step-left">
+      <img src="step1.png" alt="Step 1 Image" class="step-image">
+      <div class="step-content">
+        <h2>Step 1: Pre-Application</h2>
+        <p>
+          Applicants fill out a Google Form that contains their names and contact numbers. The contact details will be used to contact them for scheduled interviews and actual Google Forms for application.
+        </p>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step step-right">
+      <div class="step-content">
+        <h2>Step 2: Application</h2>
+        <p>
+          Applicants will be contacted through the contact details that they have provided during the pre-application period. Applicants will receive the Google Form link through the number they provided on the pre-application form and will be directed to answer them only in a specific timeframe.
+        </p>
+      </div>
+      <img src="step2.png" alt="Step 2 Image" class="step-image">
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step step-left">
+      <img src="step3.png" alt="Step 3 Image" class="step-image">
+      <div class="step-content">
+        <h2>Step 3: Interview</h2>
+        <p>
+          Applicants are subjected to the final phase of the application through the interview. Applicants are advised to attend the interview during the schedule they have received during the pre- application phase. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step step-right">
+      <div class="step-content">
+        <h2>Step 4: Initial Shortlisting / Screening</h2>
+        <p>
+          The team of interviewers will make a shortlist from all of the applicants. Their form responses will be summarized and will be sent to the US end for further evaluation. Shortlisted applicants are advised to have their lines open for further questions and clarifications.
+        </p>
+      </div>
+      <img src="step4.png" alt="Step 4 Image" class="step-image">
+    </div>
+
+    <!-- Step 5 -->
+    <div class="step step-left">
+      <img src="step5.png" alt="Step 5 Image" class="step-image">
+      <div class="step-content">
+        <h2>Step 5: Final Selection</h2>
+        <p>
+          The US end will receive the shortlist of applicants from the Team of interviewers from Santa Barbara. Board of Directors will choose this year's SBPAAI CSP scholars through further deliberations, inquiries, and clarifications.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="solid-green-footer">
+        <div class="footer-content">
+          <div class="footer-logo-text">
+            <img src="logo.png" alt="Organization Logo" class="footer-logo">
+            <div class="footer-text">
+              <p class="footer-description">
+                A California nonprofit public benefit corporation to engage in activities to foster fellowship among its members, 
+                to promote their common cultural interests, and to render assistance to the inhabitants of Santa Barbara, Pangasinan, Philippines.
+              </p>
+              <p class="footer-contact">
+                Contact Us @ <a href="mailto:empoweringkabaleyans@icloud.com">empoweringkabaleyans@icloud.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Credits Section -->
+        <div class="footer-credits">
+          <p>
+            © 2024 Empowering Kabaleyans All Rights Reserved | Designed by <span class="designer">SPIDEY WEB</span>
+          </p>
+        </div>
+      </footer>
+      
+
+</body>
+</html>

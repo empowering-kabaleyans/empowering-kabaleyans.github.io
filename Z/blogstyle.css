@@ -1,0 +1,101 @@
+/* Solid Green Footer */
+.solid-green-footer {
+    background: #39a06f; /* Solid green background */
+    color: #ffffff; /* White text color */
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Footer Content Layout */
+  .footer-content {
+    display: flex;
+    justify-content: center; /* Center the entire footer content */
+    align-items: center;
+    margin-bottom: 20px; /* Space between content and credits */
+  }
+  
+  /* Logo and Text Container */
+  .footer-logo-text {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and text */
+    max-width: 800px; /* Limit the total width */
+  }
+  
+  /* Logo Styling */
+  .footer-logo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px; /* Optional rounded corners */
+  }
+  
+  /* Text Styling */
+  .footer-text {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: justify; /* Justify the text */
+  }
+  
+  .footer-description {
+    font-family: 'Verdana', sans-serif; /* Common, readable footer font */
+    font-size: 14px;
+    line-height: 1.6; /* Improve readability */
+    margin: 0 0 10px 0; /* Add spacing below the description */
+  }
+  
+  .footer-contact {
+    font-family: 'Verdana', sans-serif; /* Match font */
+    font-size: 14px;
+    margin: 0;
+    text-align: left; /* Keep email aligned to the left */
+  }
+  
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: normal; /* Remove bold */
+    transition: color 0.3s;
+  }
+  
+  .footer-contact a:hover {
+    color: #f5f13a; /* Yellow hover effect */
+  }
+  
+  /* Credits Section */
+  .footer-credits {
+    text-align: center;
+    font-family: 'Verdana', sans-serif; /* Match footer font */
+    font-size: 12px;
+    color: #e1e1e1; /* Light grey for less emphasis */
+  }
+  
+  .footer-credits .designer {
+    font-weight: bold;
+    color: #f5f13a; /* Yellow for emphasis */
+    transition: color 0.3s;
+  }
+  
+  .footer-credits .designer:hover {
+    color: #ffffff; /* White on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-logo-text {
+      flex-direction: column; /* Stack logo and text vertically */
+      text-align: center; /* Center all text and logo on small screens */
+    }
+  
+    .footer-logo {
+      margin-bottom: 15px; /* Add spacing below logo */
+    }
+  
+    .footer-text {
+      text-align: justify;
+    }
+  
+    .footer-credits {
+      font-size: 10px; /* Slightly smaller for small screens */
+    }
+  }
+  
